@@ -15,12 +15,12 @@ code {
 }
 
 .category-aktif {
-  background-color: #22668A;
+  background-color: #3AC7FF;
   color: white;
 }
 
 .btn-primary {
-  background-color: #22668A;
+  background-color: #3AC7FF;
 }
 
 @media only screen and (max-height: 1000px) {

@@ -84,7 +84,7 @@ export default class Pesanan extends Component {
         });
       })
       .catch((error) => {
-        console.log("Error yaa ", error);
+        console.log("Error Nich ", error);
       });
   };
 
@@ -104,7 +104,7 @@ export default class Pesanan extends Component {
         });
       })
       .catch((error) => {
-        console.log("Error yaa ", error);
+        console.log("Error Nich ", error);
       });
   };
 
@@ -126,14 +126,14 @@ export default class Pesanan extends Component {
                 >
                   <Row>
                     <Col xs={2}>
-                      <h4>
+                      <h5>
                         <Badge pill variant="success">
                           {menuKeranjang.jumlah}
                         </Badge>
-                      </h4>
+                      </h5>
                     </Col>
                     <Col>
-                      <h5>{menuKeranjang.product.nama}</h5>
+                      <h6>{menuKeranjang.product.nama}</h6>
                       <p>Rp. {numberWithCommas(menuKeranjang.product.harga)}</p>
                     </Col>
                     <Col>

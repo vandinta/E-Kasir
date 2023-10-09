@@ -58,7 +58,7 @@ export default class Kategori extends Component{
                 className={categoriYangDipilih === category.nama && "category-aktif"}
                 style={{cursor: 'pointer'}}
               >
-                <h5>
+                <h5 className="kategori-menu">
                   <Icon nama={category.nama} /> {category.nama}
                 </h5>
               </ListGroup.Item>

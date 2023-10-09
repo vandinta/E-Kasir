@@ -4,9 +4,9 @@ import { numberWithCommas } from "../utils/utils";
 
 const Menu = ({ menu, masukKeranjang }) => {
   return (
-    <Col md={4} xs={6} className="mb-4">
-      <Card className="shadow" onClick={() => masukKeranjang(menu)}>
-        <Card.Img
+    <Col md={4} xs={6} className="coloum-menu">
+      <Card className="shadow card-menu" onClick={() => masukKeranjang(menu)}>
+        <Card.Img className="img-menu"
           variant="top"
           src={
             "assets/img/" +
@@ -16,7 +16,7 @@ const Menu = ({ menu, masukKeranjang }) => {
           }
         />
         <Card.Body>
-          <Card.Title className="text-nama">{menu.nama} <strong>({menu.kode})</strong></Card.Title>
+          <Card.Title className="text-nama">{menu.nama}</Card.Title>
           <Card.Text className="text-harga">Rp. {numberWithCommas(menu.harga)}</Card.Text>
         </Card.Body>
       </Card>

@@ -44,3 +44,30 @@ code {
 .text-harga{
   font-size: 14px;
 }
+
+.kategori-menu{
+  margin-top: 3px;
+  margin-left: 3px;
+  font-size: 18px;
+}
+
+.pesanan-menu{
+  font-size: 18px;
+}
+
+.img-menu{
+  width: 250px;
+  height: 160px;
+}
+
+.card-menu{
+  width: 252px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.tombol-bayar{
+  width: 277px;
+  height: 50px;
+  margin-bottom: 20px;
+}

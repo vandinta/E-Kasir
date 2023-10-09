@@ -18,7 +18,7 @@ export default class Berhasil extends Component {
         })
       })
       .catch((error) => {
-        console.log("Pesan Error ", error);
+        console.log("Error Nich ", error);
       });
   }
   render() {

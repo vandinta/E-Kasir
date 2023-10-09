@@ -7,7 +7,7 @@ import { numberWithCommas } from "../utils/utils";
 const ModalPesanan = ({
   showModal,
   handleClose,
-  pesananDetail,
+  keranjangDetail,
   jumlah,
   keterangan,
   tambah,
@@ -17,21 +17,21 @@ const ModalPesanan = ({
   totalHarga,
   hapusPesanan
 }) => {
-  if (pesananDetail) {
+  if (keranjangDetail) {
     return (
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>
-            {pesananDetail.product.nama}{" "}
+            {keranjangDetail.product.nama}{" "}
             <strong>
-              (Rp. {numberWithCommas(pesananDetail.product.harga)})
+              (Rp. {numberWithCommas(keranjangDetail.product.harga)})
             </strong>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>Total Harga :</Form.Label>
+              <Form.Label>Harga Total :</Form.Label>
               <p>
                 <strong>
                   Rp. {numberWithCommas(totalHarga)}
@@ -70,7 +70,7 @@ const ModalPesanan = ({
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="danger" onClick={() => hapusPesanan(pesananDetail.id)}>
+          <Button variant="danger" onClick={() => hapusPesanan(keranjangDetail.id)}>
             <FontAwesomeIcon icon={faTrash} /> Hapus Pesanan
           </Button>
         </Modal.Footer>

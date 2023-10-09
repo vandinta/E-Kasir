@@ -59,7 +59,7 @@ const ModalPesanan = ({
                 as="textarea"
                 rows="3"
                 name="keterangan"
-                placeholder="Contoh : Pedes, Nasi Setengah"
+                placeholder="Contoh : Pedes, Manis, Tambah Nasi"
                 value={keterangan}
                 onChange={(event) => changeHandler(event)}
               />

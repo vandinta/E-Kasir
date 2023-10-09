@@ -24,8 +24,8 @@ code {
 }
 
 @media only screen and (max-height: 1000px) {
-  .hasil {
-    height: 650px;
+  .pesanan {
+    height: 430px;
   }
   
   .menu {
@@ -55,16 +55,16 @@ code {
   font-size: 18px;
 }
 
-.img-menu{
+/* .img-menu{
   width: 250px;
   height: 160px;
-}
+} */
 
-.card-menu{
+/* .card-menu{
   width: 252px;
   height: 250px;
   border-radius: 15px;
-}
+} */
 
 .tombol-bayar{
   width: 277px;

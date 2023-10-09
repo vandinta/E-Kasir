@@ -117,7 +117,7 @@ export default class Pesanan extends Component {
         </h4>
         <hr />
         {keranjangs.length !== 0 && (
-          <Card className="overflow-auto hasil">
+          <Card className="overflow-auto pesanan">
             <ListGroup variant="flush">
               {keranjangs.map((menuKeranjang) => (
                 <ListGroup.Item
